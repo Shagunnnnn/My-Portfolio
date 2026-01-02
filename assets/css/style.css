@@ -1,0 +1,135 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #020617, #020617);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ========== COMMON SECTIONS ========== */
+section {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+h1 span {
+  color: #38bdf8;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ========== PARTICLES BACKGROUND ========== */
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #020617;
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+/* ================= CUSTOM CURSOR ================= */
+
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Small center dot */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Outer smooth ring */
+.cursor-outline {
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(56, 189, 248, 0.6);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, border 0.15s ease-out;
+}
+
+/* ===== CUSTOM CURSOR FIXED ===== */
+
+/* Hide default cursor */
+html, body {
+  cursor: none;
+}
+
+/* Dot cursor */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #38bdf8;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+}
+
+/* Outer ring */
+.cursor-outline {
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(56, 189, 248, 0.7);
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Disable cursor on mobile */
+@media (max-width: 768px) {
+  html, body {
+    cursor: auto;
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+}
+
