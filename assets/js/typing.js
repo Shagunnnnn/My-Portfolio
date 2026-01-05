@@ -1,8 +1,7 @@
 const words = [
   "Java Developer",
   "Backend Developer",
-  "Learning Spring Boot",
-  "Problem Solver"
+   "Problem Solver"
 ];
 
 let i = 0, j = 0, isDeleting = false;
