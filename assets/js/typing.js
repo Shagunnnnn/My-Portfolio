@@ -1,6 +1,6 @@
 const words = [
   "Web Developer",
-  "Absoluute Learner",
+  "Absolute Learner",
    "Problem Solver"
 ];
 
